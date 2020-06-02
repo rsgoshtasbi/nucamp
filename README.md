@@ -13,5 +13,5 @@
 - To push updates to branch and to set upstream on your first push use $ git push -u origin BRANCHNAME
   - Frank: 'git push -u origin frank'
   - Mia: 'git push -u origin mia'
-  - this same command will be used whenever pushing updates to your branch.
+  - Apparently you do not need the -u orgin BRANCHNAME once the upstream is set. You can just use 'git push' like normal.
  
