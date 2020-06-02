@@ -9,4 +9,9 @@
   - Frank: `git checkout -b frank`
   - Mia: `git checkout -b mia`
   - This will create a branch for you to work off seperately. That way we all have a copy of the base code. Then you can each work on your specific parts and push your code changes without interferring with each other. I will go ahead and merge it all throughout the week so that it's a less complicated thing for you guys to worry about :)
+
+- To push updates to branch and to set upstream on your first push use $ git push -u origin BRANCHNAME
+  - Frank: 'git push -u origin frank'
+  - Mia: 'git push -u origin mia'
+  - this same command will be used whenever pushing updates to your branch.
  
