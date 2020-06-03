@@ -37,3 +37,7 @@ header h2 {
 .navbar {
   background-color: #901cad;
 }
+
+.avatar {
+  border-radius:50%;
+}

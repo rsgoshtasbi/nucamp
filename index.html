@@ -96,7 +96,7 @@
             </li>
           </ul>
           <span class="navbar-text ml-auto">
-            <a role="button" data-toggle="modal" data-target="#loginModal">
+            <a role="button"  data-toggle="modal" data-target="#loginModal">
               <i class="fa fa-sign-in"></i>
               Login
             </a>
@@ -104,6 +104,8 @@
         </div>
       </div>
     </nav>
+
+    <!-- Modals -->
 
     <div class="modal fade" role="dialog" id="reserveModal">
       <div class="modal-dialog modal-lg" role="document">
@@ -287,30 +289,34 @@
                         <table class="table">
                           <thead>
                             <tr>
-                              <th scope="col">Name</th>
-                              <th scope="col">Title</th>
-                              <th scope="col">Location</th>
-                              <th scope="col">Years Experience</th>
+                              <th scope="col" class="text-center">Name</th>
+                              <th scope="col"class="text-center">Title</th>
+                              <th scope="col" class="text-center">Location</th>
+                              <th scope="col" class="text-center">Years Experience</th>
+                              <th></th>
                             </tr>
                           </thead>
                           <tbody>
-                            <tr>
-                              <td>Frank P.</td>
-                              <td>Software Engineer</td>
-                              <td>Irvine</td>
-                              <td>5</td>
+                            <tr data-toggle="modal" data-target="#result1">
+                              <td class="text-center">Frank P.</td>
+                              <td class="text-center">Software Engineer</td>
+                              <td class="text-center">Irvine</td>
+                              <td class="text-center">5</td>
+                              <td class="text-center"><a role="button" class="btn btn-md btn-secondary text-white" data-toggle="modal" data-target="#result1Modal">Contact</a></td>
                             </tr>
-                            <tr>
-                              <td>Frank P.</td>
-                              <td>Software Engineer</td>
-                              <td>Irvine</td>
-                              <td>5</td>
+                            <tr data-toggle="modal" data-target="#result2">
+                              <td class="text-center">Frank P.</td>
+                              <td class="text-center">Software Engineer</td>
+                              <td class="text-center">Irvine</td>
+                              <td class="text-center">5</td>
+                              <td class="text-center"><a role="button" class="btn btn-md btn-secondary text-white" data-toggle="modal" data-target="#result2Modal">Contact</a></td>
                             </tr>
-                            <tr>
-                              <td>Frank P.</td>
-                              <td>Software Engineer</td>
-                              <td>Irvine</td>
-                              <td>5</td>
+                            <tr data-toggle="modal" data-target="#result3">
+                              <td class="text-center">Frank P.</td>
+                              <td class="text-center">Software Engineer</td>
+                              <td class="text-center">Irvine</td>
+                              <td class="text-center">5</td>
+                              <td class="text-center"><a role="button" class="btn btn-md btn-secondary text-white" data-toggle="modal" data-target="#result3Modal">Contact</a></td>
                             </tr>
                           </tbody>
                         </table>
@@ -336,30 +342,33 @@
                         <table class="table">
                           <thead>
                             <tr>
-                              <th scope="col">Name</th>
-                              <th scope="col">Title</th>
-                              <th scope="col">Location</th>
-                              <th scope="col">Years Experience</th>
+                              <th scope="col" class="text-center">Name</th>
+                              <th scope="col"class="text-center">Title</th>
+                              <th scope="col" class="text-center">Location</th>
+                              <th scope="col" class="text-center">Years Experience</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr>
-                              <td>Frank P.</td>
-                              <td>Software Engineer</td>
-                              <td>Irvine</td>
-                              <td>5</td>
+                              <td class="text-center">Frank P.</td>
+                              <td class="text-center">Software Engineer</td>
+                              <td class="text-center">Irvine</td>
+                              <td class="text-center">5</td>
+                              <td class="text-center"><a role="button" class="btn btn-md btn-secondary text-white" data-toggle="modal" data-target="#result4Modal">Contact</a></td>
                             </tr>
                             <tr>
-                              <td>Frank P.</td>
-                              <td>Software Engineer</td>
-                              <td>Irvine</td>
-                              <td>5</td>
+                              <td class="text-center">Frank P.</td>
+                              <td class="text-center">Software Engineer</td>
+                              <td class="text-center">Irvine</td>
+                              <td class="text-center">5</td>
+                              <td class="text-center"><a role="button" class="btn btn-md btn-secondary text-white" data-toggle="modal" data-target="#result5Modal">Contact</a></td>
                             </tr>
                             <tr>
-                              <td>Frank P.</td>
-                              <td>Software Engineer</td>
-                              <td>Irvine</td>
-                              <td>5</td>
+                              <td class="text-center">Frank P.</td>
+                              <td class="text-center">Software Engineer</td>
+                              <td class="text-center">Irvine</td>
+                              <td class="text-center">5</td>
+                              <td class="text-center"><a role="button" class="btn btn-md btn-secondary text-white" data-toggle="modal" data-target="#result6Modal">Contact</a></td>
                             </tr>
                           </tbody>
                         </table>
@@ -385,38 +394,71 @@
                         <table class="table">
                           <thead>
                             <tr>
-                              <th scope="col">Name</th>
-                              <th scope="col">Title</th>
-                              <th scope="col">Location</th>
-                              <th scope="col">Years Experience</th>
+                              <th scope="col" class="text-center">Name</th>
+                              <th scope="col"class="text-center">Title</th>
+                              <th scope="col" class="text-center">Location</th>
+                              <th scope="col" class="text-center">Years Experience</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr>
-                              <td>Frank P.</td>
-                              <td>Software Engineer</td>
-                              <td>Irvine</td>
-                              <td>5</td>
+                              <td class="text-center">Frank P.</td>
+                              <td class="text-center">Software Engineer</td>
+                              <td class="text-center">Irvine</td>
+                              <td class="text-center">5</td>
+                              <td class="text-center"><a role="button" class="btn btn-md btn-secondary text-white" data-toggle="modal" data-target="#result7Modal">Contact</a></td>
                             </tr>
                             <tr>
-                              <td>Frank P.</td>
-                              <td>Software Engineer</td>
-                              <td>Irvine</td>
-                              <td>5</td>
+                              <td class="text-center">Frank P.</td>
+                              <td class="text-center">Software Engineer</td>
+                              <td class="text-center">Irvine</td>
+                              <td class="text-center">5</td>
+                              <td class="text-center"><a role="button" class="btn btn-md btn-secondary text-white" data-toggle="modal" data-target="#result8Modal">Contact</a></td>
                             </tr>
                             <tr>
-                              <td>Frank P.</td>
-                              <td>Software Engineer</td>
-                              <td>Irvine</td>
-                              <td>5</td>
+                              <td class="text-center">Frank P.</td>
+                              <td class="text-center">Software Engineer</td>
+                              <td class="text-center">Irvine</td>
+                              <td class="text-center">5</td>
+                              <td class="text-center"><a role="button" class="btn btn-md btn-secondary text-white" data-toggle="modal" data-target="#result9Modal">Contact</a></td>
                             </tr>
                           </tbody>
                         </table>
+                        
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Filter Result Modals -->
+
+    <div class="modal fade" role="dialog" id="result1Modal">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img src="img/person1.jpg" class="modal-title avatar mr-3" alt="Profile of Person1" height="75">
+            <h4 class="modal-title">Frank Pimentel</h4>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <div class="row">
+            </div>
+            <div class="row">
+              <div class="col">
+                <h5>Software Engineer</h5>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col"></div>
             </div>
           </div>
         </div>
@@ -482,6 +524,18 @@
     <script>
       $(function () {
         $('[data-tt="tooltip"]').tooltip();
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const rows = document.query.querySelectorAll("tr[data-toggle]");
+
+        rows.forEach(row => {
+          row.addEventListner("click", () => {
+            window.location.toggle = row.dataset.toggle;
+          });
+        });
       });
     </script>
   </body>
