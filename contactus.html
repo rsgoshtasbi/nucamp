@@ -46,6 +46,7 @@
       </div>
     </header>
 
+    <!--Navigation Bar-->
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
       <div class="container">
         <a class="navbar-brand" href="index.html">
@@ -78,7 +79,7 @@
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="#"
-                ><i class="fa fa-address-card fa-lg"></i> Contact</a
+                ><i class="fa fa-address-card fa-lg"></i> Sign Up</a
               >
             </li>
           </ul>
@@ -86,6 +87,8 @@
       </div>
     </nav>
 
+  <!--Sign Up Form-->
+  <!--URL for form data to be sent to?-->
     <div class="container">
       <div class="row row-content">
         <div class="col-12">
@@ -93,7 +96,9 @@
           <hr />
         </div>
         <div class="col-md-10">
-          <form>
+          <form method="post">
+
+  <!--First Name-->
             <div class="form-group row">
               <label for="firstName" class="col-md-2 col-form-label">
                 First Name
@@ -108,7 +113,7 @@
                 />
               </div>
             </div>
-
+  <!--Last Name-->
             <div class="form-group row">
               <label for="lastName" class="col-md-2 col-form-label"
                 >Last Name</label
@@ -123,7 +128,7 @@
                 />
               </div>
             </div>
-
+  <!--Telephone Number-->
             <div class="form-group row">
               <label for="areaCode" class="col-md-2 col-form-label">
                 Contact Tel.
@@ -146,6 +151,7 @@
                 />
               </div>
             </div>
+  <!--Email-->
             <div class="form-group row">
               <label for="email" class="col-md-2 col-form-label">Email</label>
               <div class="col-md-10">
@@ -158,37 +164,51 @@
                 />
               </div>
             </div>
-
+  <!--Company Name-->
             <div class="form-group row">
-              <div class="col offset-md-2">
-                May we contact you?
-                <div class="form-check form-check-inline">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    id="contactYes"
-                    name="contactRadios"
-                    value="yes"
-                  />
-                  <label for="contactYes" class="form-check-label">Yes</label>
-                </div>
-
-                <div class="form-check form-check-inline">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    id="contactNo"
-                    name="contactRadios"
-                    value="no"
-                  />
-                  <label for="contactNo" class="form-check-label">No</label>
-                </div>
+              <label for="companyName" class="col-md-2 col-form-label">Company Name</label>
+              <div class="col-md-10">
+                <select class="form-control">
+                  <option value="">Company Name</option>
+                  <option value="companyA">Company A</option>
+                  <option value="companyB">Company B</option>
+                  <option value="companyC">Company C</option>
+                  <option value="companyD">Company D</option>
+                  <option value="companyE">Company E</option>
+                  <option value="companyOther">Other</option>
+                </select>
               </div>
             </div>
-
+  <!--Position Title-->
+            <div class="form-group row">
+              <label for="email" class="col-md-2 col-form-label">Position</label>
+              <div class="col-md-10">
+                <input
+                  class="form-control"
+                  type="text"
+                  id="position"
+                  name="position"
+                  placeholder="Previous Position"
+                />
+              </div>
+            </div>
+  <!--LinkedIn URL-->
+            <div class="form-group row">
+              <label for="email" class="col-md-2 col-form-label">LinkedIn URL</label>
+              <div class="col-md-10">
+                <input
+                  class="form-control"
+                  type="url"
+                  id="linkedIn"
+                  name="linkedIn"
+                  placeholder="LinkedIn URL"
+                />
+              </div>
+            </div>
+  <!--About Me-->
             <div class="form-group row">
               <label for="feedback" class="col-md-2 col-form-label">
-                Your Feedback
+                About Me
               </label>
               <div class="col-md-10">
                 <textarea
@@ -200,10 +220,16 @@
               </div>
             </div>
 
+            <div class="checkbox">
+              <label class="small">
+                  <input name="terms" type="checkbox">I have read and agreed to the <a href="#">terms of service</a>
+              </label>
+            </div>
+
             <div class="form-group row">
               <div class="offset-md-2 col-md-10">
                 <button type="submit" class="btn btn-primary">
-                  Send Feedback
+                  Sign Up
                 </button>
               </div>
             </div>
@@ -221,7 +247,7 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="aboutus.html">About</a></li>
               <li><a href="#">Sites</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#">Sign Up</a></li>
             </ul>
           </div>
           <div class="col-6 col-sm-5 text-center">
