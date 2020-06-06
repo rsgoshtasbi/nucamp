@@ -87,165 +87,234 @@
       </div>
     </nav>
 
-  <!--Sign Up Form-->
-  <!--URL for form data to be sent to?-->
+    <!--Sign Up Form-->
+    <!--URL for form data to be sent to?-->
     <div class="container">
       <div class="row row-content">
         <div class="col-12">
-          <h2>Sign Up</h2>
-          <hr />
-        </div>
-        <div class="col-md-10">
-          <form method="post">
-
-  <!--First Name-->
-            <div class="form-group row">
-              <label for="firstName" class="col-md-2 col-form-label">
-                First Name
-              </label>
-              <div class="col-md-10">
-                <input
-                  class="form-control"
-                  type="text"
-                  id="firstName"
-                  name="firstName"
-                  placeholder="First Name"
-                />
-              </div>
+          <div class="card">
+            <div class="card-header">
+              <h2>Sign Up</h2>
             </div>
-  <!--Last Name-->
-            <div class="form-group row">
-              <label for="lastName" class="col-md-2 col-form-label"
-                >Last Name</label
-              >
-              <div class="col-md-10">
-                <input
-                  class="form-control"
-                  type="text"
-                  id="lastName"
-                  name="lastName"
-                  placeholder="Last Name"
-                />
+          </div>
+          <div class="card-body">
+            <form method="post">
+              <!--First Name-->
+              <div class="form-group row">
+                <div class="col-12">
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    placeholder="First Name"
+                    required="required"
+                    data-error="name is required."
+                  />
+                </div>
               </div>
-            </div>
-  <!--Telephone Number-->
-            <div class="form-group row">
-              <label for="areaCode" class="col-md-2 col-form-label">
-                Contact Tel.
-              </label>
-              <div class="col-5 col-md-3">
-                <input
-                  class="form-control"
-                  type="tel"
-                  id="areaCode"
-                  name="areaCode"
-                  placeholder="Area code"
-                />
+              <!--Last Name-->
+              <div class="form-group row">
+                <div class="col-12">
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    placeholder="Last Name"
+                    required="required"
+                    data-error="name is required."
+                  />
+                </div>
               </div>
-              <div class="col-7">
-                <input
-                  class="form-control"
-                  type="tel"
-                  name="telNum"
-                  placeholder="Tel. number"
-                />
+              <!--Telephone Number-->
+              <div class="form-group row">
+                <div class="col-5">
+                  <input
+                    class="form-control"
+                    type="tel"
+                    id="areaCode"
+                    name="areaCode"
+                    placeholder="Area code"
+                    required="required"
+                    data-error="name is required."
+                  />
+                </div>
+                <div class="col-7">
+                  <input
+                    class="form-control"
+                    type="tel"
+                    name="telNum"
+                    placeholder="Tel. number"
+                    required="required"
+                    data-error="name is required."
+                  />
+                </div>
               </div>
-            </div>
-  <!--Email-->
-            <div class="form-group row">
-              <label for="email" class="col-md-2 col-form-label">Email</label>
-              <div class="col-md-10">
-                <input
-                  class="form-control"
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Email"
-                />
+              <!--Email-->
+              <div class="form-group row">
+                <div class="col-12">
+                  <input
+                    class="form-control"
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    required="required"
+                    data-error="name is required."
+                  />
+                </div>
               </div>
-            </div>
-  <!--Company Name-->
-            <div class="form-group row">
-              <label for="companyName" class="col-md-2 col-form-label">Company Name</label>
-              <div class="col-md-10">
-                <select class="form-control">
-                  <option value="">Company Name</option>
-                  <option value="companyA">Company A</option>
-                  <option value="companyB">Company B</option>
-                  <option value="companyC">Company C</option>
-                  <option value="companyD">Company D</option>
-                  <option value="companyE">Company E</option>
-                  <option value="companyOther">Other</option>
-                </select>
+              <!--Company Name-->
+              <div class="form-group row">
+                <div class="col-12">
+                  <select
+                    class="form-control"
+                    required="required"
+                    data-error="name is required."
+                  >
+                    <option value="">Company Name</option>
+                    <option value="companyA">Company A</option>
+                    <option value="companyB">Company B</option>
+                    <option value="companyC">Company C</option>
+                    <option value="companyD">Company D</option>
+                    <option value="companyE">Company E</option>
+                    <option value="companyOther">Other</option>
+                  </select>
+                </div>
               </div>
-            </div>
-  <!--Position Title-->
-            <div class="form-group row">
-              <label for="email" class="col-md-2 col-form-label">Position</label>
-              <div class="col-md-10">
-                <input
-                  class="form-control"
-                  type="text"
-                  id="position"
-                  name="position"
-                  placeholder="Previous Position"
-                />
+              <!--Position Title-->
+              <div class="form-group row">
+                <div class="col-12">
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="position"
+                    name="position"
+                    placeholder="Previous Position"
+                    required="required"
+                    data-error="name is required."
+                  />
+                </div>
               </div>
-            </div>
-  <!--LinkedIn URL-->
-            <div class="form-group row">
-              <label for="email" class="col-md-2 col-form-label">LinkedIn URL</label>
-              <div class="col-md-10">
-                <input
-                  class="form-control"
-                  type="url"
-                  id="linkedIn"
-                  name="linkedIn"
-                  placeholder="LinkedIn URL"
-                />
+              <!--LinkedIn URL-->
+              <div class="form-group row">
+                <div class="col-12">
+                  <input
+                    class="form-control"
+                    type="url"
+                    id="linkedIn"
+                    name="linkedIn"
+                    placeholder="LinkedIn URL"
+                    required="required"
+                    data-error="name is required."
+                  />
+                </div>
               </div>
-            </div>
-  <!--About Me-->
-            <div class="form-group row">
-              <label for="feedback" class="col-md-2 col-form-label">
-                About Me
-              </label>
-              <div class="col-md-10">
+              <!--About Me-->
+              <div class="form-group row">
+                <div class="col-12">
                 <textarea
                   class="form-control"
                   id="feedback"
                   name="feedback"
                   rows="8"
+                  placeholder="About Me"
                 ></textarea>
               </div>
             </div>
 
-            <div class="form group row">
-              <label for="photo" class="col-md-2 col-form-label">Upload Photo</label>
-            <div class="col-md-10 input-group mb-3 px-2 bg-light">
-              <input id="upload" type="file" onchange="readURL(this);" class="form-control border-0">
-            </div>
-          </div>
-
-
-            <div class="checkbox">
-              <label class="small">
-                  <input name="terms" type="checkbox"> I have read and agreed to the <a href="#">terms of service</a>
-              </label>
-            </div>
-
-            <div class="form-group row">
-              <div class="offset-md-2 col-md-10">
-                <button type="submit" class="btn btn-primary">
-                  Sign Up
-                </button>
+              <!--Photo-->
+              <div class="form group row">
+                <label for="photo" class="col-md-2 col-form-label"
+                  >Upload Photo</label
+                >
+                <div class="col-md-10 input-group mb-3 px-2">
+                  <input
+                    id="upload"
+                    type="file"
+                    onchange="readURL(this);"
+                    class="form-control border-0"
+                  />
+                </div>
               </div>
-            </div>
-          </form>
+
+              <!--Terms and Conditions-->
+              <div class="checkbox">
+                <label class="small">
+                  <input name="terms" type="checkbox" /> I have read and agreed
+                  to the
+                  <a href="#" data-toggle="modal" data-target="#terms"
+                    >terms of service</a
+                  >
+                </label>
+              </div>
+
+<!--Sign Up-->
+              <div class="form-group row">
+                <div class="col-md-10">
+                  <button type="submit" class="btn btn-primary">
+                    Sign Up
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
 
+    <!--T&C Modal-->
+    <div class="modal fade" role="dialog" id="terms">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-info text-white">
+            <h3 class="modal-white">
+              Terms and Conditions
+            </h3>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            <dl class="row form-group">
+              <div class="col scroll">
+                <div class="card">
+                  <div class="card-body">
+                    Terms and Conditions
+                    <br />Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum Lorem
+                    ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                    irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                    cupidatat non proident, sunt in culpa qui officia deserunt
+                    mollit anim id est laborum
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  class="btn btn-secondary ml-auto mt-2"
+                  data-dismiss="modal"
+                >
+                  I agree to the terms of service
+                </button>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--footer-->
     <footer class="site-footer">
       <div class="container">
         <div class="row">

@@ -37,3 +37,8 @@ header h2 {
 .navbar {
   background-color: #901cad;
 }
+
+.scroll {
+  max-height: 300px;
+  overflow-y: auto;
+}
