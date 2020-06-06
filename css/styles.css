@@ -41,3 +41,14 @@ header h2 {
 .avatar {
   border-radius:50%;
 }
+.filter-content {
+  margin: 1px;
+}
+
+.filter-header {
+  padding-left: 25px;
+}
+
+.form-check-label {
+  margin-left: 4px;
+}
