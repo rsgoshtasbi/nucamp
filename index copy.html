@@ -31,7 +31,6 @@
   </head>
 
   <body>
-    <!-- header -->
     <header class="jumbotron jumbotron-fluid">
       <div class="container">
         <div class="row">
@@ -60,7 +59,6 @@
       </div>
     </header>
 
-    <!-- navbar -->
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
       <div class="container">
         <a class="navbar-brand" href="#">
@@ -108,6 +106,7 @@
     </nav>
 
     <!-- Modals -->
+
     <div class="modal fade" role="dialog" id="reserveModal">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -200,7 +199,6 @@
       </div>
     </div>
 
-    <!-- login modal -->
     <div class="modal fade" role="dialog" id="loginModal">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -267,201 +265,10 @@
       </div>
     </div>
 
-    <!-- real work starts here lol -->
     <div class="container">
       <div class="row">
         <div class="col-3 mt-5">
-          <form>
-            <!-- filter menu: companies -->
-            <div class="form-group row">
-              <div class="col">
-                <h3 id="filterCompanies">Companies</h3>
-                <div class="col form-check form-check-inline">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="facebook"
-                    name="facebook"
-                    value="yes"
-                  />
-                  <label for="facebook" class="form-check-label"
-                    >Facebook</label
-                  >
-                </div>
-                <div class="col form-check form-check-inline">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="apple"
-                    name="apple"
-                    value="yes"
-                  />
-                  <label for="apple" class="form-check-label">Apple</label>
-                </div>
-                <div class="col form-check form-check-inline">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="amazon"
-                    name="amazon"
-                    value="yes"
-                  />
-                  <label for="amazon" class="form-check-label">Amazon</label>
-                </div>
-                <div class="col form-check form-check-inline">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="airbnb"
-                    name="airbnb"
-                    value="yes"
-                  />
-                  <label for="airbnb" class="form-check-label">AirBnB</label>
-                </div>
-                <div class="col form-check form-check-inline">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="uber"
-                    name="uber"
-                    value="yes"
-                  />
-                  <label for="uber" class="form-check-label">Uber</label>
-                </div>
-              </div>
-            </div>
-
-            <!-- filter menu: skills -->
-            <div class="form-group row">
-              <div class="col">
-                <h3>Skills</h3>
-                <div class="col form-check form-check-inline mt-1">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="html"
-                    name="html"
-                    value="yes"
-                  />
-                  <label for="html" class="form-check-label">HTML</label>
-                  <span class="navbar-text ml-auto">
-                    <select
-                      class="form-control-sm"
-                      name="numCampers"
-                      id="numCampers"
-                    >
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value="9">9</option>
-                      <option value="10">10</option>
-                    </select>
-                  </span>
-                </div>
-                <div class="col form-check form-check-inline mt-1">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="css"
-                    name="css"
-                    value="yes"
-                  />
-                  <label for="css" class="form-check-label">CSS</label>
-                  <span class="navbar-text ml-auto">
-                    <select
-                      class="form-control-sm"
-                      name="numCampers"
-                      id="numCampers"
-                    >
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value="9">9</option>
-                      <option value="10">10</option>
-                    </select>
-                  </span>
-                </div>
-                <div class="col form-check form-check-inline mt-1">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="javascript"
-                    name="javascript"
-                    value="yes"
-                  />
-                  <label for="javascript" class="form-check-label"
-                    >JavaScript</label
-                  >
-                  <span class="navbar-text ml-auto">
-                    <select
-                      class="form-control-sm"
-                      name="numCampers"
-                      id="numCampers"
-                    >
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value="9">9</option>
-                      <option value="10">10</option>
-                    </select>
-                  </span>
-                </div>
-                <div class="col form-check form-check-inline mt-1">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="skillbootstrap"
-                    name="bootstrap"
-                    value="yes"
-                  />
-                  <label for="bootstrap" class="form-check-label"
-                    >Bootstrap</label
-                  >
-                  <span class="navbar-text ml-auto">
-                    <select
-                      class="form-control-sm"
-                      name="skillBootstrap"
-                      id="skillBootstrap"
-                    >
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value="9">9</option>
-                      <option value="10">10</option>
-                    </select>
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            <div class="form-group row">
-              <div class="col">
-                <button type="submit" class="btn btn-primary btn-block">
-                  Filter
-                </button>
-              </div>
-            </div>
-          </form>
+          Filter Column
         </div>
         <div  class="col mt-5">
            <div class="accordion" id="accordionExample">
@@ -695,7 +502,6 @@
       </div>
     </div>
 
-    <!-- footers -->
     <footer class="site-footer">
       <div class="container">
         <div class="row row-content">
