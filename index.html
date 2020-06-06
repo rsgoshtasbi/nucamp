@@ -98,7 +98,7 @@
             </li>
           </ul>
           <span class="navbar-text ml-auto">
-            <a role="button"  data-toggle="modal" data-target="#loginModal">
+            <a role="button" data-toggle="modal" data-target="#loginModal">
               <i class="fa fa-sign-in"></i>
               Login
             </a>
@@ -269,8 +269,11 @@
 
     <!-- real work starts here lol -->
     <div class="container">
-      <div class="row">
-        <div class="col-3 mt-5">
+      <div class="row row-content">
+        <div class="col-3 border">
+          <div class="col border-bottom m-1">
+            <h2 class="text-center">Filters</h2>
+          </div>
           <form>
             <!-- filter menu: companies -->
             <div class="form-group row">
@@ -335,7 +338,7 @@
             <div class="form-group row">
               <div class="col">
                 <h3>Skills</h3>
-                <div class="col form-check form-check-inline mt-1">
+                <div class="col form-check form-check-inline">
                   <input
                     class="form-check-input"
                     type="checkbox"
@@ -344,7 +347,7 @@
                     value="yes"
                   />
                   <label for="html" class="form-check-label">HTML</label>
-                  <span class="navbar-text ml-auto">
+                  <span class="navbar-text ml-auto d-none d-md-block">
                     <select
                       class="form-control-sm"
                       name="numCampers"
@@ -372,7 +375,7 @@
                     value="yes"
                   />
                   <label for="css" class="form-check-label">CSS</label>
-                  <span class="navbar-text ml-auto">
+                  <span class="navbar-text ml-auto d-none d-md-block">
                     <select
                       class="form-control-sm"
                       name="numCampers"
@@ -402,7 +405,7 @@
                   <label for="javascript" class="form-check-label"
                     >JavaScript</label
                   >
-                  <span class="navbar-text ml-auto">
+                  <span class="navbar-text ml-auto d-none d-md-block">
                     <select
                       class="form-control-sm"
                       name="numCampers"
@@ -432,7 +435,7 @@
                   <label for="bootstrap" class="form-check-label"
                     >Bootstrap</label
                   >
-                  <span class="navbar-text ml-auto">
+                  <span class="navbar-text ml-auto d-none d-md-block">
                     <select
                       class="form-control-sm"
                       name="skillBootstrap"
@@ -463,18 +466,30 @@
             </div>
           </form>
         </div>
-        <div  class="col mt-5">
-           <div class="accordion" id="accordionExample">
+        <div class="col">
+          <div class="accordion" id="accordionExample">
             <div class="card">
               <div class="card-header" id="headingOne">
                 <h2 class="mb-0">
-                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <button
+                    class="btn btn-link"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
                     <h3>Facebook</h3>
                   </button>
                 </h2>
               </div>
-          
-              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+
+              <div
+                id="collapseOne"
+                class="collapse show"
+                aria-labelledby="headingOne"
+                data-parent="#accordionExample"
+              >
                 <div class="card-body">
                   <div class="container">
                     <div class="row">
@@ -483,9 +498,11 @@
                           <thead>
                             <tr>
                               <th scope="col" class="text-center">Name</th>
-                              <th scope="col"class="text-center">Title</th>
+                              <th scope="col" class="text-center">Title</th>
                               <th scope="col" class="text-center">Location</th>
-                              <th scope="col" class="text-center">Years Experience</th>
+                              <th scope="col" class="text-center">
+                                Years Experience
+                              </th>
                               <th></th>
                             </tr>
                           </thead>
@@ -495,21 +512,45 @@
                               <td class="text-center">Software Engineer</td>
                               <td class="text-center">Irvine</td>
                               <td class="text-center">5</td>
-                              <td class="text-center"><a role="button" class="btn btn-md btn-secondary text-white" data-toggle="modal" data-target="#result1Modal">Contact</a></td>
+                              <td class="text-center">
+                                <a
+                                  role="button"
+                                  class="btn btn-md btn-secondary text-white"
+                                  data-toggle="modal"
+                                  data-target="#result1Modal"
+                                  >Contact</a
+                                >
+                              </td>
                             </tr>
                             <tr data-toggle="modal" data-target="#result2">
                               <td class="text-center">Frank P.</td>
                               <td class="text-center">Software Engineer</td>
                               <td class="text-center">Irvine</td>
                               <td class="text-center">5</td>
-                              <td class="text-center"><a role="button" class="btn btn-md btn-secondary text-white" data-toggle="modal" data-target="#result2Modal">Contact</a></td>
+                              <td class="text-center">
+                                <a
+                                  role="button"
+                                  class="btn btn-md btn-secondary text-white"
+                                  data-toggle="modal"
+                                  data-target="#result2Modal"
+                                  >Contact</a
+                                >
+                              </td>
                             </tr>
                             <tr data-toggle="modal" data-target="#result3">
                               <td class="text-center">Frank P.</td>
                               <td class="text-center">Software Engineer</td>
                               <td class="text-center">Irvine</td>
                               <td class="text-center">5</td>
-                              <td class="text-center"><a role="button" class="btn btn-md btn-secondary text-white" data-toggle="modal" data-target="#result3Modal">Contact</a></td>
+                              <td class="text-center">
+                                <a
+                                  role="button"
+                                  class="btn btn-md btn-secondary text-white"
+                                  data-toggle="modal"
+                                  data-target="#result3Modal"
+                                  >Contact</a
+                                >
+                              </td>
                             </tr>
                           </tbody>
                         </table>
@@ -522,12 +563,24 @@
             <div class="card">
               <div class="card-header" id="headingTwo">
                 <h2 class="mb-0">
-                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <button
+                    class="btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
                     <h3>Apple</h3>
                   </button>
                 </h2>
               </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div
+                id="collapseTwo"
+                class="collapse"
+                aria-labelledby="headingTwo"
+                data-parent="#accordionExample"
+              >
                 <div class="card-body">
                   <div class="container">
                     <div class="row">
@@ -536,9 +589,11 @@
                           <thead>
                             <tr>
                               <th scope="col" class="text-center">Name</th>
-                              <th scope="col"class="text-center">Title</th>
+                              <th scope="col" class="text-center">Title</th>
                               <th scope="col" class="text-center">Location</th>
-                              <th scope="col" class="text-center">Years Experience</th>
+                              <th scope="col" class="text-center">
+                                Years Experience
+                              </th>
                             </tr>
                           </thead>
                           <tbody>
@@ -547,21 +602,45 @@
                               <td class="text-center">Software Engineer</td>
                               <td class="text-center">Irvine</td>
                               <td class="text-center">5</td>
-                              <td class="text-center"><a role="button" class="btn btn-md btn-secondary text-white" data-toggle="modal" data-target="#result4Modal">Contact</a></td>
+                              <td class="text-center">
+                                <a
+                                  role="button"
+                                  class="btn btn-md btn-secondary text-white"
+                                  data-toggle="modal"
+                                  data-target="#result4Modal"
+                                  >Contact</a
+                                >
+                              </td>
                             </tr>
                             <tr>
                               <td class="text-center">Frank P.</td>
                               <td class="text-center">Software Engineer</td>
                               <td class="text-center">Irvine</td>
                               <td class="text-center">5</td>
-                              <td class="text-center"><a role="button" class="btn btn-md btn-secondary text-white" data-toggle="modal" data-target="#result5Modal">Contact</a></td>
+                              <td class="text-center">
+                                <a
+                                  role="button"
+                                  class="btn btn-md btn-secondary text-white"
+                                  data-toggle="modal"
+                                  data-target="#result5Modal"
+                                  >Contact</a
+                                >
+                              </td>
                             </tr>
                             <tr>
                               <td class="text-center">Frank P.</td>
                               <td class="text-center">Software Engineer</td>
                               <td class="text-center">Irvine</td>
                               <td class="text-center">5</td>
-                              <td class="text-center"><a role="button" class="btn btn-md btn-secondary text-white" data-toggle="modal" data-target="#result6Modal">Contact</a></td>
+                              <td class="text-center">
+                                <a
+                                  role="button"
+                                  class="btn btn-md btn-secondary text-white"
+                                  data-toggle="modal"
+                                  data-target="#result6Modal"
+                                  >Contact</a
+                                >
+                              </td>
                             </tr>
                           </tbody>
                         </table>
@@ -574,12 +653,24 @@
             <div class="card">
               <div class="card-header" id="headingThree">
                 <h2 class="mb-0">
-                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <button
+                    class="btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
                     <h3>Amazon</h3>
                   </button>
                 </h2>
               </div>
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div
+                id="collapseThree"
+                class="collapse"
+                aria-labelledby="headingThree"
+                data-parent="#accordionExample"
+              >
                 <div class="card-body">
                   <div class="container">
                     <div class="row">
@@ -588,9 +679,11 @@
                           <thead>
                             <tr>
                               <th scope="col" class="text-center">Name</th>
-                              <th scope="col"class="text-center">Title</th>
+                              <th scope="col" class="text-center">Title</th>
                               <th scope="col" class="text-center">Location</th>
-                              <th scope="col" class="text-center">Years Experience</th>
+                              <th scope="col" class="text-center">
+                                Years Experience
+                              </th>
                             </tr>
                           </thead>
                           <tbody>
@@ -599,25 +692,48 @@
                               <td class="text-center">Software Engineer</td>
                               <td class="text-center">Irvine</td>
                               <td class="text-center">5</td>
-                              <td class="text-center"><a role="button" class="btn btn-md btn-secondary text-white" data-toggle="modal" data-target="#result7Modal">Contact</a></td>
+                              <td class="text-center">
+                                <a
+                                  role="button"
+                                  class="btn btn-md btn-secondary text-white"
+                                  data-toggle="modal"
+                                  data-target="#result7Modal"
+                                  >Contact</a
+                                >
+                              </td>
                             </tr>
                             <tr>
                               <td class="text-center">Frank P.</td>
                               <td class="text-center">Software Engineer</td>
                               <td class="text-center">Irvine</td>
                               <td class="text-center">5</td>
-                              <td class="text-center"><a role="button" class="btn btn-md btn-secondary text-white" data-toggle="modal" data-target="#result8Modal">Contact</a></td>
+                              <td class="text-center">
+                                <a
+                                  role="button"
+                                  class="btn btn-md btn-secondary text-white"
+                                  data-toggle="modal"
+                                  data-target="#result8Modal"
+                                  >Contact</a
+                                >
+                              </td>
                             </tr>
                             <tr>
                               <td class="text-center">Frank P.</td>
                               <td class="text-center">Software Engineer</td>
                               <td class="text-center">Irvine</td>
                               <td class="text-center">5</td>
-                              <td class="text-center"><a role="button" class="btn btn-md btn-secondary text-white" data-toggle="modal" data-target="#result9Modal">Contact</a></td>
+                              <td class="text-center">
+                                <a
+                                  role="button"
+                                  class="btn btn-md btn-secondary text-white"
+                                  data-toggle="modal"
+                                  data-target="#result9Modal"
+                                  >Contact</a
+                                >
+                              </td>
                             </tr>
                           </tbody>
                         </table>
-                        
                       </div>
                     </div>
                   </div>
@@ -635,7 +751,12 @@
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <img src="img/person1.jpg" class="modal-title avatar mr-3" alt="Profile of Person1" height="75">
+            <img
+              src="img/person1.jpg"
+              class="modal-title avatar mr-3"
+              alt="Profile of Person1"
+              height="75"
+            />
             <h4 class="modal-title">Frank Pimentel</h4>
             <button type="button" class="close" data-dismiss="modal">
               &times;
@@ -643,8 +764,7 @@
           </div>
 
           <div class="modal-body">
-            <div class="row">
-            </div>
+            <div class="row"></div>
             <div class="row">
               <div class="col">
                 <h5>Software Engineer</h5>
@@ -725,7 +845,7 @@
       document.addEventListener("DOMContentLoaded", () => {
         const rows = document.query.querySelectorAll("tr[data-toggle]");
 
-        rows.forEach(row => {
+        rows.forEach((row) => {
           row.addEventListner("click", () => {
             window.location.toggle = row.dataset.toggle;
           });
