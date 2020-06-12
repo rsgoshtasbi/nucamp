@@ -5,27 +5,25 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
     <link
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
-
-    <!-- Additional CSS must be placed after Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="node_modules/bootstrap-social/bootstrap-social.css"
-    />
-
     <link
       rel="stylesheet"
       href="node_modules/font-awesome/css/font-awesome.min.css"
     />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans"
+      href="node_modules/bootstrap-social/bootstrap-social.css"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <!-- endbuild -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans"
+    />
 
     <title>NuCamp: A Better Way To Camp</title>
   </head>
@@ -42,20 +40,6 @@
             <h1>NuCamp</h1>
             <h2>a better way to camp</h2>
           </div>
-          <!-- <div class="col-sm col-md-4 col-xl-2">
-            <a
-              role="button"
-              class="btn btn-lg btn-info"
-              data-toggle="modal"
-              data-target="#reserveModal"
-              data-tt="tooltip"
-              data-placement="bottom"
-              data-html="true"
-              title="Or call us at <br /><strong>1-206-555-1234</strong>"
-            >
-              Reserve Campsite
-            </a>
-          </div> -->
         </div>
       </div>
     </header>
@@ -63,9 +47,6 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
       <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="img/logo.png" height="30" width="30" alt="logo" />
-        </a>
         <button
           class="navbar-toggler ml-auto"
           type="button"
@@ -88,7 +69,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contactus.html"
-                ><i class="fa fa-address-card fa-lg"></i> Contact</a
+                ><i class="fa fa-address-card fa-lg"></i> Sign Up</a
               >
             </li>
           </ul>
@@ -781,8 +762,8 @@
             <h5>Links</h5>
             <ul class="list-unstyled">
               <li><a href="#">Home</a></li>
+              <li><a href="contactus.html">Sign Up</a></li>
               <li><a href="aboutus.html">About</a></li>
-              <li><a href="contactus.html">Contact</a></li>
             </ul>
           </div>
           <div class="col-6 col-sm-5 text-center">
@@ -815,10 +796,10 @@
             <a
               role="button"
               class="btn btn-link"
-              href="mailto:capsites@nucamp.co"
+              href="mailto:help@saveengineers.com"
             >
               <i class="fa fa-envelope-o fa-lg text-primary"></i>
-              campsites@nucamp.co
+              help@saveengineers.com
             </a>
           </div>
         </div>
@@ -829,11 +810,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-      $(function () {
-        $('[data-tt="tooltip"]').tooltip();
-      });
-    </script>
+    <script src="js/scripts.js"></script>
 
     <script>
       document.addEventListener("DOMContentLoaded", () => {
