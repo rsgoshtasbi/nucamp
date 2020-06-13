@@ -1,60 +1,63 @@
 body {
-  font-family: "Open Sans", sans-serif;
-  background-color: #faf9f9;
-}
+  font-family: "Muli", sans-serif;
+  background-color: #FAF9F9; }
 
 h1,
 h2,
 h3 {
-  font-family: "Cambria", bold;
-}
+  font-family: "Muli", sans-serif; }
 
 h2 {
-  color: #124559;
-}
+  color: #124559; }
 
 header h2 {
-  color: #eff6e0;
-}
+  color: #EFF6E0;
+  text-shadow: 2px 2px 2px #aaa; }
+
+header h1 {
+  font-family: "Sriracha", cursive;
+  text-shadow: 4px 4px 4px #aaa; }
+
+.accordion h3 {
+  color: #FAF9F9; }
 
 .site-footer {
   background-color: #124559;
-  padding: 20px 0;
-}
+  padding: 20px 0; }
 
 .jumbotron {
   margin: 0;
   padding: 30px;
   background-color: #124559;
-  color: white;
-}
+  color: white; }
 
 .row-content {
   padding: 50px 0;
   border-bottom: 1px ridge;
-  min-height: 200px;
-}
+  min-height: 200px; }
 
 .navbar {
-  background-color: #01161e;
-}
+  background-color: #01161E; }
 
-.avatar {
-  border-radius: 50%;
-}
-.filter-content {
-  margin: 1px;
-}
+.card-header {
+  background-color: #01161E; }
 
-.filter-header {
-  padding-left: 25px;
-}
+.list-unstyled li a {
+  color: #FAF9F9; }
 
-.form-check-label {
-  margin-left: 4px;
-}
+a[href="mailto:help@saveengineers.com"] {
+  color: #FAF9F9; }
 
-h5,
-h6 {
-  font-weight: bold;
-}
+a[href="tel:+12065551234"] {
+  color: #FAF9F9; }
+
+h5 {
+  color: #EFF6E0;
+  font-weight: bold; }
+
+.card h5 {
+  color: #01161E;
+  font-weight: bold; }
+
+.bt1 {
+  background-color: #EFF6E0; }

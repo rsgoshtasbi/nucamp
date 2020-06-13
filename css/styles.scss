@@ -5,8 +5,10 @@ $color-mid: #01161E;
 $color-dark: #FAF9F9;
 $color-black-transparent: rgba(0, 0, 0, 0.5);
 
-$body-font: "Open Sans", sans-serif;
-$header-font: "Cambria", bold;
+$body-font: "Muli", sans-serif;
+$header-font: "Sriracha", cursive;
+
+
 
 body {
   font-family: $body-font;
@@ -16,7 +18,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: $header-font;
+  font-family: $body-font;
 }
 
 h2 {
@@ -26,6 +28,21 @@ h2 {
 header {
   h2 {
     color: $color-pale;
+    text-shadow: 2px 2px 2px #aaa;
+  }
+}
+
+header {
+  h1 {
+    font-family: $header-font;
+    text-shadow: 4px 4px 4px #aaa;
+  }
+}
+
+
+.accordion {
+  h3 {
+    color: $color-dark;
   }
 }
 
@@ -51,5 +68,34 @@ header {
   background-color: $color-mid;
 }
 
+.card-header {
+  background-color: $color-mid
+}
 
+.list-unstyled li a {
+  color: $color-dark;
+}
 
+a[href="mailto:help@saveengineers.com"] {
+  color: $color-dark;
+}
+
+a[href="tel:+12065551234"] {
+  color: $color-dark;
+}
+
+h5 {
+  color: $color-pale;
+  font-weight: bold;
+}
+
+.card {
+  h5 {
+    color: $color-mid;
+    font-weight: bold;
+  }
+}
+
+.bt1 {
+  background-color: $color-pale;
+}
